@@ -1,0 +1,10 @@
+spriteIdle = sBlobIdle;
+spriteRolling = sBlobRolling;
+spriteHurt = sBlobHurt;
+spriteDie = sBlobDie;
+spriteAttack = sBlobAttack;
+target = noone;
+chasing = false;
+immunFrames = -1;
+deathFrames = 30;
+bounceFrames = -1;
