@@ -49,6 +49,8 @@ if kAccept {
 
 
 
+
+
 //SET SPRITE
 var _currentSpr = sprite_index;
 if isMoving != 0 {

@@ -1,7 +1,7 @@
 var _hCol = position_meeting(x + hSpeed + 1 * sign(hSpeed), y, oCol);
 var _vCol = position_meeting(x, y + vSpeed + 1 * sign(vSpeed), oCol);
 
-bounce = position_meeting(x, y, oCol); 
+bounce = place_meeting(x, y, oCol);
 
 if bounce {
 	state = 5;

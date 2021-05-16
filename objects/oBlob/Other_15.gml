@@ -3,9 +3,6 @@
 
 if bounceFrames <= 0 {
 	bounceFrames = 30;
-	//direction += 180;
-	lockedDirection = direction;
-	
 	
 } else {
 	hSpeed = -lengthdir_x(spd * 1.5, lockedDirection);
