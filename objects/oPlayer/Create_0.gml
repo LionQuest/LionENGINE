@@ -24,8 +24,8 @@ blinkColor = c_white;
 
 //Stats
 coins = 0;
-maxHp = 6;
-hp = 6;
+maxHp = 12;
+hp = maxHp;
 spd = 0;
 
 //Sprite vars

@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d6b20373-0693-47e9-8f4e-37acb4f13a2b","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Items",
+    "path": "folders/Sprites/Items.yy",
   },
   "resourceVersion": "1.0",
   "name": "sHeart",
