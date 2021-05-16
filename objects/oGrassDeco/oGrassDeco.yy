@@ -28,7 +28,7 @@
   "overriddenProperties": [
     {"propertyId":{"name":"sprite","path":"objects/oDecoration/oDecoration.yy",},"objectId":{"name":"oDecoration","path":"objects/oDecoration/oDecoration.yy",},"value":"sGrass","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
     {"propertyId":{"name":"color","path":"objects/oDecoration/oDecoration.yy",},"objectId":{"name":"oDecoration","path":"objects/oDecoration/oDecoration.yy",},"value":"$FF78A559","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
-    {"propertyId":{"name":"countRatio","path":"objects/oDecoration/oDecoration.yy",},"objectId":{"name":"oDecoration","path":"objects/oDecoration/oDecoration.yy",},"value":"20","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"countRatio","path":"objects/oDecoration/oDecoration.yy",},"objectId":{"name":"oDecoration","path":"objects/oDecoration/oDecoration.yy",},"value":"35","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Decorations",

@@ -1,25 +1,18 @@
 /// @description Hurt State
 if immunFrames < 0 { 
-	immunFrames = 30;
+	immunFrames = 60;
+	if colliding_inst_id != -4 lockedDirection = colliding_inst_id.direction;
+	hp -= 1;
+	blinkAlpha = 1;
+	
 } else {
 	
 	sprite_index = sprHurt;
-	with oEnemy {
-		other.hSpeed = lengthdir_x((spd + 1)/2, direction);
-		other.vSpeed = lengthdir_y((spd + 1)/2, direction);
+	if colliding_inst_id != -4 {
+		hSpeed = lengthdir_x((abs(colliding_inst_id.hSpeed) + 1) / 2, lockedDirection);
+		vSpeed = lengthdir_y((abs(colliding_inst_id.vSpeed) + 1) / 2, lockedDirection);
 	}
-	if blinkFrames <= 3 {
-		sprite_index = sprHurt;
-		blinkFrames++;
-	} else {
-		sprite_index = sPlayerHurtBlink;
-		blinkFrames = 0;
-		
-		
-	
-	}
-	
-	if immunFrames < 1 state = 0;
+	if immunFrames < 30 state = 0;
 }
 
 

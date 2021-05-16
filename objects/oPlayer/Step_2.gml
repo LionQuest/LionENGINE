@@ -26,12 +26,27 @@ if _vCol{
 }
 
 
-if place_meeting(x, y, oEnemy) {
+if hit {
 	state = 3;
-	oEnemy.state = 5;
+	
 } 
 
-animateSprite();
+if (blinkAlpha > 0) {
+	blinkAlpha -= 1/immunFrames;
+}
+
+if !global.gamePaused {
+
+	var _totalFrames = sprite_get_number(sprite_index) / 8;
+	image_index = localFrame + (CARDINAL_DIR * _totalFrames);
+	localFrame += (sprite_get_speed(sprite_index) / FRAME_RATE) * spd + 0.05;
+	if localFrame >= _totalFrames {
+		animationEnd = true;
+		localFrame -= _totalFrames;
+	} else animationEnd = false;
+}
+
+if hp <= 0 state = 6;
 
 //SET POSITION IN ROOM
 x += hSpeed;

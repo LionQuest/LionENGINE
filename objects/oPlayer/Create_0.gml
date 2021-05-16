@@ -1,24 +1,39 @@
 //INIT VARIABLES
-spd = 0;
 hSpeed = 0;
 vSpeed = 0;
-distanceDodge = 20;
-distanceBonk = 10;
-distanceBonkHeight = 12;
-spdBonk = 1.5;
-lastState = 0;
+
 state = 0;
 activate = noone;
-onfloor = true;
-//collisionMap = layer_tilemap_get_id(layer_get_id("Col"));
+
+lockedDirection = 0;
 image_speed = 0;
 localFrame = 0;
+
+hit = false;
+colliding_inst_id = noone;
+
+//Frames count vars
+knocbackFrames = 0;
+immunFrames = -1;
 attackFrames = 0;
+distanceDodge = 20;
+
+//Blink shader vars 
+blinkAlpha = 0;
+blinkColor = c_white;
+
+//Stats
+coins = 0;
+maxHp = 6;
+hp = 6;
+spd = 0;
+
+//Sprite vars
 sprIdle = sPlayerIdle;
 sprWalk = sPlayerWalk;
 sprDodge = sPlayerDodge;
 sprDodgeB = sPlayerBackwardsDodge;
 sprHurt = sPlayerHurt;
-immunFrames = -1;
-hit = false;
-blinkFrames = 0;
+sprKnocback = sPlayerKnocback;
+sprAttack = sPlayerAttack;
+

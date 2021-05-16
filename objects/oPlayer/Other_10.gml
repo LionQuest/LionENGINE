@@ -23,7 +23,7 @@ if kDodge {
 	state = 1;
 }
 
-if kAttack {
+if kAttack && attackFrames <= 0 {
 	state = 4;
 }
 

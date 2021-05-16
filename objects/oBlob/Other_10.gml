@@ -3,8 +3,8 @@ sprite_index = spriteIdle;
 hSpeed = 0;
 vSpeed = 0;
 
-if target != noone and immunFrames < 0 && oPlayer.immunFrames < 0 {
+if target != noone and immunFrames <= 0 && oPlayer.immunFrames < 0 {
 	state = 1;
-	alarm[0] = 60 * 10;
+	alarm[0] = FRAME_RATE * 10;
 }
 

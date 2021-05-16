@@ -66,16 +66,20 @@ function draw_key(key, x, y) {
 //animateSprite()
 //Handles player's animation
 function animateSprite() {
+
 	var _totalFrames = sprite_get_number(sprite_index) / 8;
 	image_index = localFrame + (CARDINAL_DIR * _totalFrames);
-	localFrame += sprite_get_speed(sprite_index) / FRAME_RATE * spd + 0.05
+
+	localFrame += sprite_get_speed(sprite_index) / FRAME_RATE * spd + 0.05;
 	if localFrame >= _totalFrames {
 		animationEnd = true;
-		localFrame -= _totalFrames;
+		localFrame -= _totalFrames -1;
 	} else animationEnd = false;
+	
+	
 }
 	
 function draw_shadow() {
-	draw_sprite_ext(sShadow, 0, x, y, 3, 3, 0, c_white, 1);
-
+	//draw_sprite_ext(sShadow, 0, x, y, 3, 3, 0, c_white, 1);
+	
 }

@@ -1,12 +1,19 @@
 /// @description Bounce State
-if bounceFrames < 0 {
+//sprite_index = spriteRolling;
+
+if bounceFrames <= 0 {
 	bounceFrames = 30;
+	//direction += 180;
+	lockedDirection = direction;
+	
+	
 } else {
+	hSpeed = -lengthdir_x(spd * 1.5, lockedDirection);
+	vSpeed = -lengthdir_y(spd * 1.5, lockedDirection);
 	bounceFrames--;
-	hSpeed = -lengthdir_x(spd, direction);
-	vSpeed = -lengthdir_y(spd, direction);
-	if bounceFrames < 1 {
+	
+	if bounceFrames <= 0 {
 		state = 1;
-		bounceFrames = -1;
+
 	}
 }

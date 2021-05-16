@@ -5,13 +5,20 @@ if pressedPause
 //PAUSE
 if !global.gamePaused {
 	with all {
-		if !object_is_ancestor(object_index, oArea)	
+		if !object_is_ancestor(object_index, oArea)	and !object_is_ancestor(object_index, oItem)
 			depth = -bbox_bottom;
 	}
+	
 } else {
 	with all {	
-		//image_speed = 0;
+		image_speed = 0;
+		hSpeed = 0;
+		vSpeed = 0;
 	} 
+}
+
+if instance_number(oEnemy) < 3 {
+	instance_create_layer(irandom_range(0, room_width), irandom_range(150, room_height), "Instances", oBlob);
 }
 
 //DEBUG CONTROLS
